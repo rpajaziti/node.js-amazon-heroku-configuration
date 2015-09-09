@@ -1,4 +1,4 @@
-Node.js configurations, platforms, deployment etc
+Node.js configurations, platforms, deployment etc.
 ========
 
 ### Introduction
@@ -17,12 +17,22 @@ Node.js configurations, platforms, deployment etc
  3. Download Heroku Toolbelt(used to config and deploy heroku apps)
 [Download](https://toolbelt.heroku.com/)
 
+### Working with node.js applications in localhost(without any service)
+ 1. First you should download,install and configure MySQL WorkBench to create a localhost with a database.
+* **[Download.](http://dev.mysql.com/downloads/windows/installer/)
+* **[Install and use!](https://www.youtube.com/watch?v=N039SxEpvW0)
+
+
+
+### Working with application in node.js
+
+
 ### Configuration and deployment to Heroku
 
- 1. First after you install Heroku toolbelt, open the command prompt and write heroku login where you pass your username and password.
+* **First after you install Heroku toolbelt, open the command prompt and write heroku login where you pass your username and password.
 Everything you can find it here, how to config, deploy and edit heroku apps. [Getting started with Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app)
 
-  PS: In the 4th step(Getting started with Heroku), when you create an heroku app, if you want to create that app with a specific name, just type:
+* **PS: In the 4th step(Getting started with Heroku), when you create an heroku app, if you want to create that app with a specific name, just type:
 `heroku create your_name` , and this creates an application with your_name.herokuapp.com
 Heroku works with most RDS Databases, but supports best PostgreSQL Database and it is less painful, and better if you want to deploy apps in heroku, to work with PostgreSQL.
 
