@@ -10,23 +10,23 @@ Node.js configurations, platforms, deployment etc
 
 ### Installation
 
-1.First download and install node.js
+ 1. First download and install node.js
 [Download](https://nodejs.org/)
-2.Download a text editor
-I Recommend using [notepad++](https://notepad-plus-plus.org/) | [sublime](http://www.sublimetext.com/), because they are free to use and great text editors.
-3.Download Heroku Toolbelt(used to config and deploy heroku apps)
+ 2. Download a text editor
+ I Recommend using [notepad++](https://notepad-plus-plus.org/) | [sublime](http://www.sublimetext.com/), because they are free to use and great text editors.
+ 3. Download Heroku Toolbelt(used to config and deploy heroku apps)
 [Download](https://toolbelt.heroku.com/)
 
 ### Configuration and deployment to Heroku
 
-1.First after you install Heroku toolbelt, open the command prompt and write heroku login where you pass your username and password.
+ 1. First after you install Heroku toolbelt, open the command prompt and write heroku login where you pass your username and password.
 Everything you can find it here, how to config, deploy and edit heroku apps. [Getting started with Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app)
 
-PS: In the 4th step(Getting started with Heroku), when you create an heroku app, if you want to create that app with a specific name, just type:
+  PS: In the 4th step(Getting started with Heroku), when you create an heroku app, if you want to create that app with a specific name, just type:
 `heroku create your_name` , and this creates an application with your_name.herokuapp.com
 Heroku works with most RDS Databases, but supports best PostgreSQL Database and it is less painful, and better if you want to deploy apps in heroku, to work with PostgreSQL.
 
-5.
+
 
 
 
