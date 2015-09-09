@@ -19,8 +19,8 @@ Node.js configurations, platforms, deployment etc.
 
 ### Working with node.js applications in localhost(without any service)
  1. First you should download,install and configure MySQL WorkBench to create a localhost with a database.
-* **[Download.](http://dev.mysql.com/downloads/windows/installer/)
-* **[Install and use!](https://www.youtube.com/watch?v=N039SxEpvW0)
+* [Download.](http://dev.mysql.com/downloads/windows/installer/)
+* [Install and use!](https://www.youtube.com/watch?v=N039SxEpvW0)
 
 
 
