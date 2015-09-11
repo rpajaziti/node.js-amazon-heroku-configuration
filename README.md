@@ -103,7 +103,7 @@ Heroku works with most RDS Databases, but supports best PostgreSQL Database and 
  * Deploy application using Elastic Beanstalk in browser, by first Zip-ing your application, then click Upload and Deploy, find the zip file, and set a unique name every time you deploy application here. 
  
  * Deploy application ussing CLI commands in command prompt. In the application folder, open command prompt, by holding shift and clicking the right mouse click, open command prompt. Then write `eb init` and enter, then select the region you have set in you AWS account. Then click the environment you want to deploy this application(number) and hit enter. After all these, when you are prompted to log-in, enter your log-in details. aws-access-key-id and aws_secret_access_key are found in Security Credentials in Top of the page in your account name.
- When you click that if you are prompted with something, click yes and then click Add a key then copy that and paste in command prompt
+ When you click that if you are prompted with something, click Continue to Security Credentials and then click Access Keys (Access Key ID and Secret Access Key), then Create a new Key(or some other word) then copy that and paste in command prompt what it asks(aws-access-key-id then aws_secret_access_key).
  After you are logged in and selected environment, write `git add .`(if you see some warning or something write git add --all to deploy all changes without a warning), then write `git commit -m "your_message_here"`, and last one write `eb deploy` to deploy your application to your environment.
  TIP 1: If you want to change the environment, because you have created another environment, delete the folder ".elasticbeanstalk", and repeat all steps told above. 
  TIP 2: If you want to have two AWS Accounts to deploy application, without messing around alot, you can add the second account into ".aws' folder, then open "config" file inside that folder with wordpad or some other text editor and add the other profile to "config" file.
@@ -117,7 +117,6 @@ Heroku works with most RDS Databases, but supports best PostgreSQL Database and 
  aws_access_key_id = AKI*****************
  aws_secret_access_key = xxd5********************************
 ```
-
  Now the default profile is eb-cli, and if you want to select the second profile, when you should delete ".elasticbeanstalk" file, then write `eb init profile eb-cli2`(or some other profile), then follow the steps above.
  So every time you want to deploy your application, you follow the steps above, without the `eb init` command. 
  
