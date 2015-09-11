@@ -8,7 +8,7 @@ Node.js configurations, platforms, deployment etc.
  5. [Configuration and deployment to Heroku](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-deployment-to-heroku)
  6. [Configuration and adding AWS RDS instances](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-adding-aws-rds-instances)
  7. [Configuration and adding AWS Elastic Beanstalk application/environment](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-adding-aws-elastic-beanstalk-applicationenvironment)
- 8. [Projects, Applications, and Companies that use Node.js](https://github.com/RamadanPajaziti/nodeConfigDoc#projects-applications-and-companies-that-use-node.js)
+ 8. [Projects, Applications, and Companies that use Node.js](https://github.com/RamadanPajaziti/nodeConfigDoc#projects-applications-and-companies-that-use-nodejs)
 
 
 ### Introduction
