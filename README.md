@@ -44,7 +44,8 @@ Node.js configurations, platforms, deployment etc.
 * First way, you open command prompt in the folder you have your file, then write npm init, and this creates a file called package.json, which then you add a property(object) called `"dependencies"`, where you put your modules plus the version of them, if you dont know what version it has you just write `'*'` in the value of a property.
  After that you write npm install to install all the modules located in package.json file in dependencies property.
  Dependencies in a file with some most used modules will look like this:
- `{
+```javascript
+  {
     "name": "node-api",
     "main": "index.js",
     "dependencies": {
@@ -54,7 +55,8 @@ Node.js configurations, platforms, deployment etc.
       "mysql": "*",
     },
     ...
-   } `
+   }
+```
 * Second way is to first write npm init in the folder you want to install modules, then write npm install name_of_the_module version --save(if you want the latest dont write the version word), and this installs and saves the property name and version of the module in dependencies.
 
 
