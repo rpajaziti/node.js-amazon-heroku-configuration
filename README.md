@@ -116,6 +116,6 @@ Heroku works with most RDS Databases, but supports best PostgreSQL Database and 
  aws_access_key_id = AKI*****************
  aws_secret_access_key = xxd5********************************
 ```
- Now the default profile is eb-cli, and if you want to select the second profile, when you should delete ".elasticbeanstalk" file, then write `eb init profile eb-cli2`(or some other profile), then follow the steps above.
+ * Now the default profile is eb-cli, and if you want to select the second profile, when you should delete ".elasticbeanstalk" file, then write `eb init profile eb-cli2`(or some other profile), then follow the steps above.
  So every time you want to deploy your application, you follow the steps above, without the `eb init` command. 
  
