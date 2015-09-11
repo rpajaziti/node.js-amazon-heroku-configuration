@@ -58,7 +58,7 @@ Node.js configurations, platforms, deployment etc.
     ...
    }
 ```
- * Second way is to first write npm init in the folder you want to install modules, then write npm install name_of_the_module version --save(if you want the latest dont write the version word), and this installs and saves the property name and version of the module in dependencies.
+ * Second way is to first write npm init in the folder you want to install modules, then write `npm install name_of_the_module version --save`(if you want the latest dont write the version word), and this installs and saves the property name and version of the module in dependencies.
 
 
 ### Configuration and deployment to Heroku
@@ -83,9 +83,9 @@ Heroku works with most RDS Databases, but supports best PostgreSQL Database and 
  
  2. Important: After you create an MySQL RDS Instance, this service by default it puts your IP in the white list in the FireWALL of aws RDS, and it lets only your PC with that IP to have access to your MySQL RDS instance. You should modify this to have access everyone to this instance, or you to have access from anywhere. This it sounds dangerous but it isnt, because if someone wants to have access to your instance, it needs alot of details(endpoint, user, password, database).
  
- Configuring IP: 
- First expand MySQL RDS Instance, then next to EndPoint Link there is (authorized) and next to it is an info icon. Hover mouse uppon info icon then click the Security Group rule(the blue link) to modify the exact Security Group.
- After you click that link it opens a new tab with Security Groups Instances, in the bottom of the browser select Inbound and click Edit, then in Source column change down-menu
+  Configuring IP: 
+  First expand MySQL RDS Instance, then next to EndPoint Link there is (authorized) and next to it is an info icon. Hover mouse uppon info   icon then click the Security Group rule(the blue link) to modify the exact Security Group.
+  After you click that link it opens a new tab with Security Groups Instances, in the bottom of the browser select Inbound and click Edit,   then in Source column change down-menu
  
  3. 
 
