@@ -108,7 +108,6 @@ Heroku works with most RDS Databases, but supports best PostgreSQL Database and 
  TIP 1: If you want to change the environment, because you have created another environment, delete the folder ".elasticbeanstalk", and repeat all steps told above. 
  TIP 2: If you want to have two AWS Accounts to deploy application, without messing around alot, you can add the second account into ".aws' folder, then open "config" file inside that folder with wordpad or some other text editor and add the other profile to "config" file.
  Other profile should be named different from first account. A config file with two accounts looks like this:
- 
 ```shell
  [profile eb-cli]
  aws_access_key_id = AKI******************
