@@ -8,14 +8,13 @@ Node.js configurations, platforms, deployment etc.
  5. [Configuration and deployment to Heroku](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-deployment-to-heroku)
  6. [Configuration and adding AWS RDS instances](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-adding-aws-rds-instances)
  7. [Configuration and adding AWS Elastic Beanstalk application/environment](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-adding-aws-elastic-beanstalk-applicationenvironment)
- 
+ 8. [Projects, Applications, and Companies that use Node.js](https://github.com/RamadanPajaziti/nodeConfigDoc#projects,-applications,-and-companies-that-use-node.js)
 
 
 ### Introduction
 
 [Node.js®](https://nodejs.org/en/) is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 
-[Projects, Applications, and Companies Using Node.](https://github.com/nodejs/node-v0.x-archive/wiki/Projects,-Applications,-and-Companies-Using-Node)
 
 
 ### Installation
@@ -134,3 +133,8 @@ Heroku works with most RDS Databases, but supports best PostgreSQL Database and 
  * Now the default profile is eb-cli, and if you want to select the second profile, when you should delete ".elasticbeanstalk" file, then write `eb init profile eb-cli2`(or some other profile), then follow the steps above.
  So every time you want to deploy your application, you follow the steps above, without the `eb init` command. 
  
+ 
+ 
+### Projects, Applications, and Companies that use Node.js
+
+[Projects, Applications, and Companies that use Node.js](https://github.com/nodejs/node-v0.x-archive/wiki/Projects,-Applications,-and-Companies-Using-Node).
