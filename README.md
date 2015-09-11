@@ -1,8 +1,8 @@
 Node.js configurations, platforms, deployment etc.
 ========
 
- 1. [Introduction](https://github.com/RamadanPajaziti/nodeConfigDoc#installation)
- 2. [Installation](https://github.com/RamadanPajaziti/nodeConfigDoc#Installation)
+ 1. [Introduction](https://github.com/RamadanPajaziti/nodeConfigDoc#introduction)
+ 2. [Installation](https://github.com/RamadanPajaziti/nodeConfigDoc#installation)
  3. [Working with node.js applications in localhost(without any service)](https://github.com/RamadanPajaziti/nodeConfigDoc#working-with-nodejs-applications-in-localhostwithout-any-service)
  4. [Working with applications in node.js](https://github.com/RamadanPajaziti/nodeConfigDoc#working-with-applications-in-nodejs)
  5. [Configuration and deployment to Heroku](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-deployment-to-heroku)
