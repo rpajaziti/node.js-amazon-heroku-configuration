@@ -13,9 +13,10 @@ Node.js configurations, platforms, deployment etc.
 
 ### Introduction
 
+<img src="https://https://dl.dropboxusercontent.com/s/1ljyz0at0lgix6d/1.JPG" width=700 alt="Node.js website">
+
 [Node.js®](https://nodejs.org/en/) is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
-
-
+[What is Node.js Exactly? - a beginners introduction to Nodejs](https://www.youtube.com/watch?v=pU9Q6oiQNd0)
 
 ### Installation
 
@@ -28,16 +29,18 @@ Node.js configurations, platforms, deployment etc.
 
 ### Working with node.js applications in localhost(without any service)
 
- 1. First you should download,install and configure MySQL WorkBench to create a localhost with a database.
+ 1. First you should download, install and configure MySQL WorkBench to create a localhost with a database.
 * [Download.](http://dev.mysql.com/downloads/windows/installer/)
 * [Install and use!](https://www.youtube.com/watch?v=N039SxEpvW0)
+
+<img src="https://dl.dropboxusercontent.com/s/qsqe81rdumnujxj/2.JPG" width=700 alt="MySQL Workbench main window">
 
  2. Open localhost instance after you open MySQL WorkBench, and create any table you want. 
  So now you have a database instance where you can create databases, create table inside them, also you can add another database from aws RDS services or from somewhere else. You just click + sign in MySQL WorkBench and enter data's of amazon RDS or some other RDS service(endpoint, username, password, database etc).
  
  3. If you want to configure a node.js application to have the possibility to run both localhost and in a service(Elastic Beanstalk, Heroku etc), when you write `app.listen(port)`, you should set port like `var port = proccess.env.PORT || 3000;` where proccess.env.PORT is whatever is in the environment variable PORT or 3000 if there is nothing in there.
  
- 4. After you finish task 3, open command prompt in the folder you have you `.js` file. There write `node file_name.js` and it runs application.
+ 4. After you finish task 3, open command prompt in the folder you have your `.js` file. There write `node file_name.js` and it runs application.
  
  5. Then go to the browser and write `localhost:3000` and it opens what you programmed in your node application.
  
@@ -54,6 +57,7 @@ Node.js configurations, platforms, deployment etc.
  * First way, you open command prompt in the folder you have your file, then write npm init, and this creates a file called package.json, which then you add a property(object) called `"dependencies"`, where you put your modules plus the version of them, if you dont know what version it has you just write `'*'` in the value of a property.
  After that you write npm install to install all the modules located in package.json file in dependencies property.
  Dependencies in a file with some most used modules will look like this:
+ 
 ```javascript
   {
     "name": "node-api",
@@ -67,7 +71,27 @@ Node.js configurations, platforms, deployment etc.
     ...
    }
 ```
+
  * Second way is to first write npm init in the folder you want to install modules, then write `npm install name_of_the_module version --save`(if you want the latest dont write the version word), and this installs and saves the property name and version of the module in dependencies.
+
+
+### Deploying at GitHub
+
+[Download](https://git-scm.com/download/win)
+First create a Repository in github with the name of the project folder. Then go in `"C:\Users\windows_user_name\"` and open command prompt in there. 
+
+<img src="https://dl.dropboxusercontent.com/s/zrd0w0cj91i1ren/3.JPG" width=300 alt="GitHub Create Repository button">
+
+Copy the link of your repository you created.
+Write `git clone https://github.com/RamadanPajaziti/repository_name`
+Note: Before pulling repository first change the name of your project, because `git clone` creates a copy of the repository in your pc.
+After pulling the repository, copy the files from your folder into your new folder, then write 3 commands by order:
+ 1. `git add .`(if this doesnt work then write `git add --all`).
+ 2. `git commit -m "type message here"`
+ 3. `git push origin master`
+ 4. You will be prompted to write your username and password.
+ 
+If you want to deploy your project at github, but dont want to include some files/folders in that deployment, create a file with no-name, just put the extension `.gitignore`. Then write the file/folder you want to exclude, and separate each one with new-line.
 
 
 ### Configuration and deployment to Heroku
@@ -80,41 +104,53 @@ Everything you can find it here, how to config, deploy and edit heroku apps.
 `heroku create your_name` , and this creates an application with your_name.herokuapp.com
 Heroku works with most RDS Databases, but supports best PostgreSQL Database and it is less painful, and better if you want to deploy apps in heroku, to work with PostgreSQL.
 
-### Configuration and adding AWS RDS instances
 
+### Configuration and adding AWS RDS instances
 
  Note: After you open an AWS account and add a credit card just for activating. 
  Be careful after you add a credit card if you want to use just the free tier that Amazon offers. Choose only the lowest settings, because if you select something like:
+
+ <img src="https://dl.dropboxusercontent.com/s/v066ci9rclc51ws/4.JPG" width=320 alt="Amazon MySQL RDS minimum Settings">
  
 * In MySQL RDS you should select the lowest settings, like lowest cpu option(t2.micro), small amount of HDD, storage type - Magnetic, and select No to Multi-AZ.
 
 * In Elastic Beanstalk in the option Environment type: select Single instance.
 
- 1. Select Services Top left, then select RDS. After you select RDS Select the database you want(MySQL in our example), select other options but always remembering not to select anything wrong, because it can take spend of your money.
- 
+ 1. Select Services Top left, then select RDS. After you select RDS Select the database you want(MySQL in our example), select other options but always remembering not to select anything wrong, because it can spent money.
+
  2. Important: After you create an MySQL RDS Instance, this service by default it puts your IP in the white list in the FireWALL of aws RDS, and it lets only your PC with that IP to have access to your MySQL RDS instance. You should modify this to have access everyone to this instance, or you to have access from anywhere. This it sounds dangerous but it isnt, because if someone wants to have access to your instance, it needs alot of details(endpoint, user, password, database).
  
- 3. Configuring IP: 
+ 3. Configuring Security Groups IP: 
  First expand MySQL RDS Instance, then next to EndPoint Link there is (authorized) and next to it is an info icon. Hover mouse uppon info   icon then click the Security Group rule(the blue link) to modify the exact Security Group.
  After you click that link it opens a new tab with Security Groups Instances, in the bottom of the browser select Inbound and click Edit, and in MySQL row in the Source column change down-menu to Anywhere, and IP automaticaly changes to 0.0.0.0/0, this gives access to use RDS instance from any IP.
  
+   <img src="https://dl.dropboxusercontent.com/s/jhs2lrpjjnjhppg/5.JPG" width=420 alt="MySQL RDS Security group">
+   
+   <img src="https://dl.dropboxusercontent.com/s/iwynvzpti9euyfp/6.JPG" width=700 alt="MySQL RDS Security group">
+      
+      
  4. If you want to use this instance in some node.js application, or to config/add/delete databases/tables, you need log-in details of RDS instance. To see these details you should expand your RDS instance, and click instance Actions, then See details. Then all details are found there, except the password. Password is set in the beggining of the instance creation.
-
+ 
+<img src="https://dl.dropboxusercontent.com/s/h3hctwtnkyve4ev/7.JPG" width=700 alt="MySQL RDS Log-in details">
 
 ### Configuration and adding AWS Elastic Beanstalk application/environment
 
- 1. To deploy Node.js applications, Elastic Beanstalk is a great service to use, and it is really stable. 
+ 1. To deploy Node.js applications, Elastic Beanstalk is a great service to use, and it is really easy to use and stable. 
  Select Node.js application to deploy, then click Launch now. This creates node.js application, but still you should create an environment
  You should set Environment type to Single instance, because if you set to Load-Balancing, then if application needs more resources, it uses them and in this way, money spent it increases alot. If you dont see this settings option then after your environment is finished creating, in the left side of Environment, click Configuration then in scaling click the settings button to change the environment type to single instance.
  
  2. There are two options to deploy applications in Elastic Beanstalk:
  
  * Deploy application using Elastic Beanstalk in browser, by first Zip-ing your application, then click Upload and Deploy, find the zip file, and set a unique name every time you deploy application here. 
- 
+ https://www.dropbox.com/s/ny4pi04u22sguud/8.JPG?dl=0
+<img src="https://dl.dropboxusercontent.com/s/ny4pi04u22sguud/8.JPG" width=420 alt="Elastic Beanstalk Upload button">
+
  * Deploy application ussing CLI commands in command prompt. In the application folder, open command prompt, by holding shift and clicking the right mouse click, open command prompt. Then write `eb init` and enter, then select the region you have set in you AWS account. Then click the environment you want to deploy this application(number) and hit enter. After all these, when you are prompted to log-in, enter your log-in details. aws-access-key-id and aws_secret_access_key are found in Security Credentials in Top of the page in your account name.
  When you click that if you are prompted with something, click Continue to Security Credentials and then click Access Keys (Access Key ID and Secret Access Key), then Create a new Key(or some other word) then copy that and paste in command prompt what it asks(aws-access-key-id then aws_secret_access_key).
  
- After you are logged in and selected environment, write `git add .`(if you see some warning or something write git add --all to deploy all changes without a warning), then write `git commit -m "your_message_here"`, and last one write `eb deploy` to deploy your application to your environment.
+<img src="https://dl.dropboxusercontent.com/s/6ryjpz9opxsozhz/9.JPG" width=420 alt="Amazon AWS Security credentials Log-in Details">
+ 
+ After you are logged in and selected region and environment, write `git add .`(if you see some warning or something write `git add --all` to deploy all changes without a warning), then write `git commit -m "your_message_here"`, and last one write `eb deploy` to deploy your application to your environment.
  
  TIP 1: If you want to change the environment, because you have created another environment, delete the folder ".elasticbeanstalk", and repeat all steps told above. 
  
