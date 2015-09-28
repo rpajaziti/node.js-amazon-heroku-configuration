@@ -6,10 +6,10 @@ Node.js configurations, platforms, deployment etc.
  3. [Working with node.js applications in localhost(without any service)](https://github.com/RamadanPajaziti/nodeConfigDoc#working-with-nodejs-applications-in-localhostwithout-any-service)
  4. [Working with applications in node.js](https://github.com/RamadanPajaziti/nodeConfigDoc#working-with-applications-in-nodejs)
  5. [Deploying at GitHub](https://github.com/RamadanPajaziti/nodeConfigDoc#deploying-at-github)
- 5. [Configuration and deployment to Heroku](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-deployment-to-heroku)
- 6. [Configuration and adding AWS RDS instances](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-adding-aws-rds-instances)
- 7. [Configuration and adding AWS Elastic Beanstalk application/environment](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-adding-aws-elastic-beanstalk-applicationenvironment)
- 8. [Projects, Applications, and Companies that use Node.js](https://github.com/RamadanPajaziti/nodeConfigDoc#projects-applications-and-companies-that-use-nodejs)
+ 6. [Configuration and deployment to Heroku](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-deployment-to-heroku)
+ 7. [Configuration and adding AWS RDS instances](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-adding-aws-rds-instances)
+ 8. [Configuration and adding AWS Elastic Beanstalk application/environment](https://github.com/RamadanPajaziti/nodeConfigDoc#configuration-and-adding-aws-elastic-beanstalk-applicationenvironment)
+ 9. [Projects, Applications, and Companies that use Node.js](https://github.com/RamadanPajaziti/nodeConfigDoc#projects-applications-and-companies-that-use-nodejs)
 
 
 ### Introduction
