@@ -13,7 +13,7 @@ Node.js configurations, platforms, deployment etc.
 
 ### Introduction
 
-<img src="https://https://dl.dropboxusercontent.com/s/1ljyz0at0lgix6d/1.JPG" width=700 alt="Node.js website">
+<img src="https://dl.dropboxusercontent.com/s/1ljyz0at0lgix6d/1.JPG" width=700 alt="Node.js website">
 
 [Node.js®](https://nodejs.org/en/) is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
 [What is Node.js Exactly? - a beginners introduction to Nodejs](https://www.youtube.com/watch?v=pU9Q6oiQNd0)
