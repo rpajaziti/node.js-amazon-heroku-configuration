@@ -78,7 +78,8 @@ Node.js configurations, platforms, deployment etc.
 ### Deploying at GitHub
 
 [Download](https://git-scm.com/download/win)
-First create a Repository in github with the name of the project folder. Then go in `"C:\Users\windows_user_name\"` and open command prompt in there. 
+
+First create a Repository in github with the name of the project folder. Then open command prompt in which folder you want to create your project.
 
 <img src="https://dl.dropboxusercontent.com/s/zrd0w0cj91i1ren/3.JPG" width=300 alt="GitHub Create Repository button">
 
