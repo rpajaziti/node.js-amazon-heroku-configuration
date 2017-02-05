@@ -33,6 +33,7 @@ Node.js configurations, platforms, deployment etc.
  1. First you should download, install and configure MySQL WorkBench to create a localhost with a database.
 * [Download.](http://dev.mysql.com/downloads/windows/installer/)
 * [Install and use!](https://www.youtube.com/watch?v=N039SxEpvW0)
+
 <img src="https://dl.dropboxusercontent.com/s/qsqe81rdumnujxj/2.JPG" width=700 alt="MySQL Workbench main window">
 
  2. Open localhost instance after you open MySQL WorkBench, and create any table you want. 
