@@ -78,7 +78,7 @@ Node.js configurations, platforms, deployment etc.
 
 ### Deploying at GitHub
 
-[Download](https://git-scm.com/download/win)
+Download Git(Version Control System - GitHub is a Git repository hosting service) - [Download]( https://git-scm.com/download/win)
 
  First create a Repository in github with the name of the project folder. Then open command prompt in which folder you want to create your project.
 
