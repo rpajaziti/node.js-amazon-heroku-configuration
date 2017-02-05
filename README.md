@@ -34,7 +34,7 @@ Node.js configurations, platforms, deployment etc.
 * [Download.](http://dev.mysql.com/downloads/windows/installer/)
 * [Install and use!](https://www.youtube.com/watch?v=N039SxEpvW0)
 
-<img src="https://dl.dropboxusercontent.com/s/qsqe81rdumnujxj/2.JPG" width=700 alt="MySQL Workbench main window">
+   <img src="https://dl.dropboxusercontent.com/s/qsqe81rdumnujxj/2.JPG" width=700 alt="MySQL Workbench main window">
 
  2. Open localhost instance after you open MySQL WorkBench, and create any table you want. 
  So now you have a database instance where you can create databases, create table inside them, also you can add another database from aws RDS services or from somewhere else. You just click + sign in MySQL WorkBench and enter data's of amazon RDS or some other RDS service(endpoint, username, password, database etc).
