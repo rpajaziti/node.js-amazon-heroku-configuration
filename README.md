@@ -33,13 +33,12 @@ Node.js configurations, platforms, deployment etc.
  1. First you should download, install and configure MySQL WorkBench to create a localhost with a database.
 * [Download.](http://dev.mysql.com/downloads/windows/installer/)
 * [Install and use!](https://www.youtube.com/watch?v=N039SxEpvW0)
-
 <img src="https://dl.dropboxusercontent.com/s/qsqe81rdumnujxj/2.JPG" width=700 alt="MySQL Workbench main window">
 
  2. Open localhost instance after you open MySQL WorkBench, and create any table you want. 
  So now you have a database instance where you can create databases, create table inside them, also you can add another database from aws RDS services or from somewhere else. You just click + sign in MySQL WorkBench and enter data's of amazon RDS or some other RDS service(endpoint, username, password, database etc).
  
- 3. If you want to configure a node.js application to have the possibility to run both localhost and in a service(Elastic Beanstalk, Heroku etc), when you write `app.listen(port)`, you should set port like `var port = proccess.env.PORT || 3000;` where proccess.env.PORT is whatever is in the environment variable PORT or 3000 if there is nothing in there.
+ 3. If you want to configure a node.js application to have the possibility to run both localhost and in a service(Elastic Beanstalk, Heroku etc), when you write `app.listen(port)`, you should set port like `var port = proccess.env.PORT || 3000;` where proccess.env.PORT is whatever is in the environment variable PORT or 3000 if there is nothing in there(localhost).
  
  4. After you finish task 3, open command prompt in the folder you have your `.js` file. There write `node file_name.js` and it runs application.
  
